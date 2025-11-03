@@ -29,6 +29,7 @@ public class LottoInput {
 
     public List<Integer> InputWinNumber() {
         while (true) {
+            System.out.println();
             System.out.println("당첨 번호를 입력해 주세요.");
             try {
                 String[] input = Console.readLine().trim().split("\\s*,\\s*");
@@ -49,6 +50,7 @@ public class LottoInput {
 
     public Integer InputWinNumberBonus(List<Integer> numbers) {
         while (true) {
+            System.out.println();
             System.out.println("보너스 번호를 입력해 주세요.");
             try {
                 Integer input = Integer.parseInt(Console.readLine());
