@@ -47,16 +47,14 @@ public class LottoInput {
         }
     }
 
-    public List<Integer> InputWinNumberBonus(List<Integer> numbers) {
+    public Integer InputWinNumberBonus(List<Integer> numbers) {
         while (true) {
             System.out.println("보너스 번호를 입력해 주세요.");
             try {
                 Integer input = Integer.parseInt(Console.readLine());
                 validateBonusNumberRange(input);
                 validateBonusNumberDuplicate(numbers, input);
-                numbers.add(input);
-                Collections.sort(numbers);
-                return numbers;
+                return input;
             }
             catch (NumberFormatException e) {
                 System.out.println("[ERROR] 문자가 포함되어 있습니다. 1~45 사이의 숫자 1개를 입력하세요.");
