@@ -26,7 +26,7 @@ public class LottoController {
             lottoNumbers.add(lottoNumberGenerator.generateLotto());
         }
         for (Lotto lotto : lottoNumbers) {
-            List<Integer> numbers = new ArrayList<Integer>();
+            List<Integer> numbers = new ArrayList<>();
             numbers.addAll(lotto.getNumbers());
             Collections.sort(numbers);
             System.out.println(numbers);
