@@ -58,7 +58,7 @@ public class LottoController {
 
     private double rewardResult(Map<LottoRanking, Integer> result) {
         double rateOfReturn = 0;
-        double totalCost = this.lottoCnt * 1000;
+        double totalCost = lottoCnt * 1000;
         double winReward = 0;
         for (LottoRanking rank : result.keySet()) {
             winReward = winReward + (rank.getReward() * result.get(rank));
